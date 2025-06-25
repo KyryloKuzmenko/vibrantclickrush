@@ -1,18 +1,62 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './benefits.scss';
+@import './game-description.scss';
+@import './gallery.scss';
+@import './key-features.scss';
+@import './main-characters.scss';
+@import './reviews.scss';
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #481f00;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #481f00;
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.5;
+  text-align: center;
+  color: #481f00;
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #481f00;
+  @include media(desktop) {
+    font-size: 20px;
+  }
 }

@@ -1,0 +1,82 @@
+.benefits-content-wrap {
+  position: relative;
+  padding-bottom: 80px;
+  @include media(desktop) {
+    padding-bottom: 116px;
+  }
+}
+
+.benefits-swiper {
+  margin-top: 40px;
+  width: 100%;
+  @include media(desktop) {
+    height: 356px;
+  }
+}
+
+.benefits-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+.benefits-swiper .benefits-swiper-slide {
+  width: 343px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include media(desktop) {
+    flex: 1 1 calc((100% - 2 * 24px) / 3);
+    min-width: 280px;
+    max-width: 400px;
+  }
+}
+
+.benefits-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 16px;
+  padding: 16px;
+  width: 340px;
+  height: 127px;
+  background: #cef0ff;
+  box-sizing: border-box;
+  @include media(desktop) {
+    width: 100%;
+    min-height: 166px;
+    padding: 24px;
+  }
+}
+
+.benefits-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.benefits-pagination .swiper-pagination-bullet {
+  width: 32px;
+  height: 32px;
+  background: #008dcb;
+  border-radius: 0;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+.benefits-pagination .swiper-pagination-bullet-active {
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+}
+

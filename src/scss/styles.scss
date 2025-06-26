@@ -5,6 +5,7 @@
 @import './key-features.scss';
 @import './main-characters.scss';
 @import './reviews.scss';
+@import './hero.scss';
 
 
 .container {
@@ -12,6 +13,7 @@
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
+  background: #f0faff;
   @include media(desktop) {
     max-width: 1440px;
     padding-left: 72px;
@@ -25,6 +27,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: #481f00;
+  background-color: #F5F5F5;
 }
 
 h1 {

@@ -1,0 +1,33 @@
+.game-description-content-wrap {
+  padding-bottom: 80px;
+  @include media(desktop) {
+    padding-bottom: 116px;
+  }
+}
+
+.game-description-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+  @include media(desktop) {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+.gd-text {
+  @include media(desktop) {
+    font-size: 24px;
+    width: 100%;
+    max-width: 636px;
+  }
+}
+
+.gd-img {
+  @include media(desktop) {
+    width: 636px;
+    height: 471px;
+  }
+}

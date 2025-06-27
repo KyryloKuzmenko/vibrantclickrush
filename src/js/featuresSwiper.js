@@ -11,7 +11,7 @@ function initKeyFeaturesSwiper() {
     keyFeaturesSwiper = new Swiper('.kf-swiper', {
       slidesPerView: 1.2,
       // centeredSlides: true,
-      spaceBetween: 10,
+      spaceBetween: 16,
       mousewheel: true,
       breakpoints: {
         1200: {

@@ -1,5 +1,6 @@
 .key-features-content-wrap {
   padding-bottom: 80px;
+  position: relative;
 }
 
 .kf-list-title-wrap {
@@ -11,6 +12,10 @@
 .kf-bullets {
   width: 24px;
   height: 24px;
+  @include media(desktop) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .kf-swiper {
@@ -24,6 +29,7 @@
 .kf-swiper-wrapper {
   @include media(desktop) {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
   }
@@ -49,9 +55,64 @@
 }
 
 .key-features-text {
-    @include media(desktop) {
-        font-size: 16px;
-        margin-top: auto;
+  @include media(desktop) {
+    font-size: 16px;
+    margin-top: auto;
+  }
+}
 
-    }
+.kf-bulet-1-1 {
+  position: absolute;
+  width: 65px;
+  top: -50px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.kf-bulet-1-2 {
+  position: absolute;
+  width: 15px;
+  top: 55px;
+  left: 73px;
+  z-index: 1000;
+}
+
+.kf-bulet-1-3 {
+  position: absolute;
+  width: 40px;
+  bottom: 120px;
+  left: 5px;
+  z-index: 1000;
+}
+
+.kf-bulet-1-4 {
+  position: absolute;
+  width: 35px;
+  bottom: 90px;
+  right: 2px;
+  z-index: 1000;
+}
+
+.kf-bulet-2-1 {
+  position: absolute;
+  width: 35px;
+  top: -50px;
+  right: 140px;
+  z-index: 1000;
+}
+
+.kf-bulet-2-2 {
+  position: absolute;
+  width: 18px;
+  top: 150px;
+  right: 50px;
+  z-index: 1;
+}
+
+.kf-bulet-2-3 {
+  position: absolute;
+  width: 47px;
+  bottom: 30px;
+  right: 50px;
+  z-index: 1;
 }

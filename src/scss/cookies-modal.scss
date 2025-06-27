@@ -1,0 +1,111 @@
+.cookie-modal .cookies-wrap {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  transform: translateX(-50%);
+  backdrop-filter: blur(60px);
+  background: rgba(255, 255, 255, 0.4);
+
+  border-radius: 16px;
+  padding: 16px 20px;
+  width: 375px;
+  height: 158px;
+
+  z-index: 9999;
+
+  @include media(desktop) {
+    justify-content: space-between;
+
+    border-radius: 16px;
+    padding: 20px 30px;
+    width: 100%;
+    height: 121px;
+    align-items: center;
+  }
+}
+
+.cookies-modal-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c3b4f;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.cookie-link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #7e71e1;
+}
+
+.cookies-btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.cookies-accept {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 8px 12px;
+  width: 128px;
+  height: 44px;
+  background: #39d40e;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #481f00;
+  @include media(desktop) {
+    font-size: 18px;
+    width: 159px;
+    height: 51px;
+  }
+}
+
+.cookies-decline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid #39d40e;
+  border-radius: 12px;
+  padding: 8px 10px;
+  width: 128px;
+  height: 44px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c3b4f;
+  @include media(desktop) {
+    font-size: 18px;
+    width: 176px;
+    height: 51px;
+  }
+}
+
+.br-desktop {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}

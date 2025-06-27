@@ -1,0 +1,69 @@
+.privacy-content-wrap,
+.terms-content-wrap,
+.cookies-content-wrap {
+  padding-top: 116px;
+  padding-bottom: 80px;
+  @include media(desktop) {
+    padding-top: 160px;
+    padding-bottom: 120px;
+  }
+}
+
+.privacy-content,
+.terms-content,
+.cookies-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @include media(desktop) {
+    gap: 30px;
+  }
+}
+
+.privacy-title,
+.terms-title,
+.cookies-title {
+  font-size: 28px;
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+
+.privacy-subtitle,
+.terms-subtitle,
+.cookies-subtitle {
+  @include media(desktop) {
+    font-size: 32px;
+  }
+}
+
+.privacy-text,
+.terms-text,
+.cookies-text {
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.privacy-list-item,
+.terms-list-item,
+.cookies-list-item {
+  display: flex;
+}
+
+.privacy-link,
+.terms-link,
+.cookies-link {
+  text-decoration: underline;
+}
+
+.span-bullet {
+  color: #481f00;
+  margin-left: 5px;
+  margin-right: 5px;
+  @include media(desktop) {
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
